@@ -344,7 +344,7 @@ function initCheckout() {
       });
       const { total } = calcTotals(cart);
       msg += `%0ATotal: ${formatPKR(total)}%0A%0APlease confirm availability.`;
-      window.open(`https://wa.me/923001234567?text=${msg}`, '_blank');
+      window.open(`https://wa.me/923338213515?text=${msg}`, '_blank');
     });
   }
 }
@@ -376,9 +376,71 @@ function initNewsletter() {
   });
 }
 
+// ---------- Mobile Navigation ----------
+function initMobileNav() {
+  const navBar = document.querySelector('.nav-bar');
+  if (!navBar || document.querySelector('.menu-toggle')) return;
+
+  const links = [
+    { label: 'Shop', href: 'shop.html' },
+    { label: 'Formal &amp; Festive', href: 'shop.html#formal' },
+    { label: 'The House', href: 'about.html' },
+    { label: 'Contact', href: 'contact.html' },
+    { label: 'Your Atelier (Cart)', href: 'cart.html' },
+  ];
+
+  // Hamburger button
+  const toggle = document.createElement('button');
+  toggle.className = 'menu-toggle';
+  toggle.setAttribute('aria-label', 'Open menu');
+  toggle.setAttribute('aria-expanded', 'false');
+  toggle.innerHTML = '<span></span><span></span><span></span>';
+
+  // Drawer + overlay
+  const overlay = document.createElement('div');
+  overlay.className = 'mobile-drawer-overlay';
+
+  const drawer = document.createElement('nav');
+  drawer.className = 'mobile-drawer';
+  drawer.setAttribute('aria-label', 'Mobile menu');
+  drawer.innerHTML =
+    '<div class="mobile-drawer-head">' +
+      '<span class="word">HOORIYA</span><span class="sub">Hanım</span>' +
+      '<button class="mobile-drawer-close" aria-label="Close menu">&times;</button>' +
+    '</div>' +
+    '<div class="mobile-drawer-links">' +
+      links.map(l => `<a href="${l.href}">${l.label}</a>`).join('') +
+    '</div>';
+
+  // Insert toggle as first item in the nav bar
+  navBar.insertBefore(toggle, navBar.firstChild);
+  document.body.appendChild(overlay);
+  document.body.appendChild(drawer);
+
+  const open = () => {
+    drawer.classList.add('open');
+    overlay.classList.add('open');
+    document.body.classList.add('menu-open');
+    toggle.setAttribute('aria-expanded', 'true');
+  };
+  const close = () => {
+    drawer.classList.remove('open');
+    overlay.classList.remove('open');
+    document.body.classList.remove('menu-open');
+    toggle.setAttribute('aria-expanded', 'false');
+  };
+
+  toggle.addEventListener('click', open);
+  overlay.addEventListener('click', close);
+  drawer.querySelector('.mobile-drawer-close').addEventListener('click', close);
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+}
+
 // ---------- Init ----------
 document.addEventListener('DOMContentLoaded', () => {
   updateCartCount();
+  initMobileNav();
   initNewsletter();
   if (document.body.dataset.page === 'product') initProductDetail();
   if (document.body.dataset.page === 'shop') initShopFilter();
