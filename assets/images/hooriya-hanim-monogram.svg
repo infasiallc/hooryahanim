@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="title desc">
+  <title id="title">Hooriya Hanım — Monogram</title>
+  <desc id="desc">Circular H monogram crest with a minimalist Sydney Opera House sail silhouette — used as social media avatar, hangtag emblem, button.</desc>
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&amp;family=Cormorant+Garamond:ital,wght@1,400&amp;display=swap');
+      .wordmark { font-family: 'Playfair Display', 'Didot', Georgia, serif; font-weight: 500; }
+      .monogram { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; }
+    </style>
+  </defs>
+
+  <!-- Sydney Opera House — minimalist sail silhouette -->
+  <g transform="translate(200, 78)">
+    <path d="M -54.76 20.00 C -55.94 11.12 -45.73 -2.20 -42.92 -2.20 C -40.77 -2.20 -33.30 14.23 -34.04 20.00 Z" fill="none" stroke="#6B1A2C" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M -45.88 20.00 C -47.36 4.61 -34.63 -18.48 -31.08 -18.48 C -28.27 -18.48 -18.28 10.01 -19.24 20.00 Z" fill="none" stroke="#6B1A2C" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M -32.56 20.00 C -34.48 -1.31 -17.91 -33.28 -13.32 -33.28 C -10.14 -33.28 1.04 6.16 0.00 20.00 Z" fill="none" stroke="#6B1A2C" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M -4.44 20.00 C -5.92 4.02 6.81 -19.96 10.36 -19.96 C 13.91 -19.96 26.34 9.64 25.16 20.00 Z" fill="none" stroke="#6B1A2C" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M 17.76 20.00 C 16.43 9.34 27.90 -6.64 31.08 -6.64 C 33.89 -6.64 43.88 13.04 42.92 20.00 Z" fill="none" stroke="#6B1A2C" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M 35.52 20.00 C 34.48 14.08 43.36 5.20 45.88 5.20 C 47.66 5.20 53.87 16.15 53.28 20.00 Z" fill="none" stroke="#6B1A2C" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/>
+    <line x1="-60" y1="24" x2="60" y2="24" stroke="#6B1A2C" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="0" cy="24" r="2" fill="#B8860B"/>
+  </g>
+
+  <!-- Crest circle -->
+  <g transform="translate(200, 240)">
+    <circle cx="0" cy="0" r="135" fill="none" stroke="#6B1A2C" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="127" fill="none" stroke="#B8860B" stroke-width="0.6"/>
+    <circle cx="0" cy="0" r="121" fill="none" stroke="#6B1A2C" stroke-width="0.4"/>
+
+    <g fill="#B8860B">
+      <circle cx="0" cy="-124" r="2"/>
+      <circle cx="87.7" cy="-87.7" r="2"/>
+      <circle cx="124" cy="0" r="2"/>
+      <circle cx="87.7" cy="87.7" r="2"/>
+      <circle cx="0" cy="124" r="2"/>
+      <circle cx="-87.7" cy="87.7" r="2"/>
+      <circle cx="-124" cy="0" r="2"/>
+      <circle cx="-87.7" cy="-87.7" r="2"/>
+    </g>
+
+    <defs>
+      <path id="m-topArc" d="M -95 -30 A 100 100 0 0 1 95 -30" fill="none"/>
+    </defs>
+    <text class="wordmark" font-size="12" letter-spacing="6" fill="#6B1A2C">
+      <textPath href="#m-topArc" startOffset="50%" text-anchor="middle">HOORIYA · HANIM</textPath>
+    </text>
+
+    <text class="monogram" x="0" y="55" text-anchor="middle" font-size="200" fill="#6B1A2C">H</text>
+
+    <line x1="-35" y1="80" x2="35" y2="80" stroke="#B8860B" stroke-width="0.8"/>
+    <circle cx="0" cy="80" r="2.4" fill="#B8860B"/>
+  </g>
+</svg>

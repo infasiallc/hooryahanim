@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="title desc">
+  <title id="title">Hooriya Hanım — Wax Seal Stamp</title>
+  <desc id="desc">Wax-seal style circular stamp emblem with a minimalist Sydney Opera House sail silhouette and H monogram.</desc>
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&amp;family=Cormorant+Garamond:ital,wght@1,400&amp;display=swap');
+      .wordmark { font-family: 'Playfair Display', Georgia, serif; font-weight: 500; }
+      .monogram { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; }
+    </style>
+    <path id="stamp-top" d="M 50 150 A 100 100 0 0 1 250 150" fill="none"/>
+    <path id="stamp-bottom" d="M 50 150 A 100 100 0 0 0 250 150" fill="none"/>
+  </defs>
+
+  <!-- Filled background circle (crimson + gold wax effect) -->
+  <circle cx="150" cy="150" r="125" fill="#B8860B"/>
+  <circle cx="150" cy="150" r="118" fill="#6B1A2C"/>
+  <circle cx="150" cy="150" r="114" fill="none" stroke="#B8860B" stroke-width="0.8"/>
+  <circle cx="150" cy="150" r="108" fill="none" stroke="#F5E6D3" stroke-width="0.5" stroke-opacity="0.4"/>
+
+  <!-- Top arc text -->
+  <text class="wordmark" font-size="14" letter-spacing="6" fill="#F5E6D3">
+    <textPath href="#stamp-top" startOffset="50%" text-anchor="middle">★ HOORIYA HANIM ★</textPath>
+  </text>
+
+  <!-- Bottom arc text -->
+  <text class="wordmark" font-size="11" letter-spacing="5" fill="#F5E6D3">
+    <textPath href="#stamp-bottom" startOffset="50%" text-anchor="middle">A PAKISTANI HOUSE OF COUTURE</textPath>
+  </text>
+
+  <!-- Sydney Opera House — minimalist sail silhouette -->
+  <g transform="translate(150, 96)">
+    <path d="M -20.72 13.00 C -21.17 9.64 -17.30 4.60 -16.24 4.60 C -15.43 4.60 -12.60 10.82 -12.88 13.00 Z" fill="none" stroke="#F5E6D3" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M -17.36 13.00 C -17.92 7.18 -13.10 -1.56 -11.76 -1.56 C -10.70 -1.56 -6.92 9.22 -7.28 13.00 Z" fill="none" stroke="#F5E6D3" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M -12.32 13.00 C -13.05 4.94 -6.78 -7.16 -5.04 -7.16 C -3.84 -7.16 0.39 7.76 0.00 13.00 Z" fill="none" stroke="#F5E6D3" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M -1.68 13.00 C -2.24 6.95 2.58 -2.12 3.92 -2.12 C 5.26 -2.12 9.97 9.08 9.52 13.00 Z" fill="none" stroke="#F5E6D3" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M 6.72 13.00 C 6.22 8.97 10.56 2.92 11.76 2.92 C 12.82 2.92 16.60 10.37 16.24 13.00 Z" fill="none" stroke="#F5E6D3" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M 13.44 13.00 C 13.05 10.76 16.41 7.40 17.36 7.40 C 18.03 7.40 20.38 11.54 20.16 13.00 Z" fill="none" stroke="#F5E6D3" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+    <line x1="-22" y1="16" x2="22" y2="16" stroke="#F5E6D3" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- H monogram -->
+  <text class="monogram" x="150" y="180" text-anchor="middle" font-size="92" fill="#F5E6D3">H</text>
+
+  <!-- Decorative dots flanking center -->
+  <circle cx="38" cy="150" r="2" fill="#F5E6D3"/>
+  <circle cx="262" cy="150" r="2" fill="#F5E6D3"/>
+</svg>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 320" role="img" aria-labelledby="title desc">
+  <title id="title">Hooriya Hanım — Bilingual Lockup</title>
+  <desc id="desc">Bilingual version of the Hooriya Hanım logo with Urdu Nastaliq calligraphy alongside the Playfair Display wordmark.</desc>
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&amp;family=Noto+Nastaliq+Urdu:wght@400;500&amp;display=swap');
+      .wordmark { font-family: 'Playfair Display', 'Didot', Georgia, serif; font-weight: 400; }
+      .subname { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-weight: 400; }
+      .urdu { font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif; font-weight: 500; direction: rtl; }
+    </style>
+  </defs>
+
+  <!-- Top divider with paisley centre -->
+  <g transform="translate(350, 28)">
+    <line x1="-160" y1="0" x2="-18" y2="0" stroke="#B8860B" stroke-width="0.5"/>
+    <line x1="18" y1="0" x2="160" y2="0" stroke="#B8860B" stroke-width="0.5"/>
+    <path d="M -10 0 C -12 -3, -8 -5, -5 -3 C -7 -1, -8 1, -10 0 Z" fill="#6B1A2C"/>
+    <path d="M 10 0 C 12 -3, 8 -5, 5 -3 C 7 -1, 8 1, 10 0 Z" fill="#6B1A2C"/>
+    <circle cx="0" cy="0" r="2.4" fill="#6B1A2C"/>
+  </g>
+
+  <!-- English wordmark -->
+  <text class="wordmark" x="350" y="108" text-anchor="middle" font-size="70" letter-spacing="12" fill="#6B1A2C">HOORIYA</text>
+
+  <!-- Hanım -->
+  <g transform="translate(350, 158)">
+    <line x1="-100" y1="0" x2="-48" y2="0" stroke="#B8860B" stroke-width="0.5"/>
+    <line x1="48" y1="0" x2="100" y2="0" stroke="#B8860B" stroke-width="0.5"/>
+    <text class="subname" x="0" y="11" text-anchor="middle" font-size="36" fill="#B8860B">Hanım</text>
+  </g>
+
+  <!-- Bilingual divider -->
+  <g transform="translate(350, 200)">
+    <line x1="-160" y1="0" x2="-30" y2="0" stroke="#6B1A2C" stroke-width="0.4"/>
+    <line x1="30" y1="0" x2="160" y2="0" stroke="#6B1A2C" stroke-width="0.4"/>
+    <text class="subname" x="0" y="4" text-anchor="middle" font-size="11" letter-spacing="3" fill="#B8860B">~</text>
+  </g>
+
+  <!-- Urdu calligraphy حوریہ ہانم -->
+  <text class="urdu" x="350" y="270" text-anchor="middle" font-size="52" fill="#6B1A2C">حوریہ ہانم</text>
+
+  <!-- Bottom divider with paisley accents -->
+  <g transform="translate(350, 300)">
+    <line x1="-160" y1="0" x2="-18" y2="0" stroke="#B8860B" stroke-width="0.5"/>
+    <line x1="18" y1="0" x2="160" y2="0" stroke="#B8860B" stroke-width="0.5"/>
+    <path d="M -10 0 C -12 -3, -8 -5, -5 -3 C -7 -1, -8 1, -10 0 Z" fill="#6B1A2C"/>
+    <path d="M 10 0 C 12 -3, 8 -5, 5 -3 C 7 -1, 8 1, 10 0 Z" fill="#6B1A2C"/>
+    <circle cx="0" cy="0" r="2" fill="#6B1A2C"/>
+  </g>
+</svg>

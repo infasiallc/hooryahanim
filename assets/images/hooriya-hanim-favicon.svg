@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Hooriya Hanım — Favicon</title>
+  <desc id="desc">Compact circular H emblem with a minimalist Sydney Opera House sail silhouette for favicon, app icon, tiny social avatar.</desc>
+
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500&amp;display=swap');
+      .monogram { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-weight: 500; }
+    </style>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="31" fill="#6B1A2C"/>
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#B8860B" stroke-width="0.6"/>
+  <circle cx="32" cy="32" r="25" fill="none" stroke="#F5E6D3" stroke-width="0.3" stroke-opacity="0.5"/>
+
+  <!-- Sydney Opera House — minimalist sail silhouette (simplified for tiny sizes) -->
+  <g transform="translate(32, 14)">
+    <path d="M -8.25 7.00 C -8.63 4.58 -5.33 0.95 -4.40 0.95 C -2.97 0.95 2.15 5.41 1.65 7.00 Z" fill="none" stroke="#F5E6D3" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M -2.20 7.00 C -2.59 3.70 0.72 -1.25 1.65 -1.25 C 2.97 -1.25 7.59 4.86 7.15 7.00 Z" fill="none" stroke="#F5E6D3" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M 4.40 7.00 C 4.18 5.24 6.05 2.60 6.60 2.60 C 7.15 2.60 8.97 5.84 8.80 7.00 Z" fill="none" stroke="#F5E6D3" stroke-width="0.9" stroke-linejoin="round" stroke-linecap="round"/>
+    <line x1="-8.5" y1="8.5" x2="8.5" y2="8.5" stroke="#F5E6D3" stroke-width="1" stroke-linecap="round"/>
+  </g>
+
+  <!-- H Monogram -->
+  <text class="monogram" x="32" y="50" text-anchor="middle" font-size="38" fill="#F5E6D3">H</text>
+</svg>
